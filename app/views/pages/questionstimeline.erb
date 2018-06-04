@@ -1,0 +1,155 @@
+<%-# Header starts -%>
+<div class="row gap">
+	<div class="col-6">
+		<nav aria-label="breadcrumb" role="navigation">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item"><%= link_to "Surveys", pages_questionshome_path %></li>
+							    <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+		  </ol>
+		</nav>
+	</div>
+	<div class="col-6">
+		<div class="float-right">
+			
+		</div>
+	</div>
+</div>
+<%-# Header ends -%>
+
+<%-# Separator -%>
+
+
+
+
+<div class="card">
+  <div class="card-body">
+  	<div class="row gap">
+	        		<div class="col-8">
+	        			<div class="float-left">
+	        				
+							  <a class="" href="#"><em class="fa fa-chevron-left"></em> <b><%= link_to "Employee Engagement", pages_questionshome_path %></b></a>
+
+	        			</div>
+	        		</div>
+	        		<div class="col-4">
+						<div class="float-right">
+							<%= link_to pages_questionshomesettings_path do %>
+							<button type="button" class="btn btn-warning ">Change schedule</button>
+						<% end %>
+													</div>
+					</div>
+				</div>
+ 
+
+<h3>Next scheduled survey</h3>
+
+
+<div class="row gap">
+	        		<div class="col-5">
+	        			<div class="float-left">
+	        				
+							  <p class="gap">Your next pulse survey is scheduled to be sent out on <b>Thurs 21st March at 2.00pm</b>   <a class="bill" href="#">Pause survey <em class="fa fa-pause"></em></a> </p>
+
+	        			</div>
+	        		</div>
+				</div>
+
+<h3>Sent surveys</h3>
+<br>
+    <table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">Survey</th>
+	      <th scope="col">Teams</th>
+	      <th scope="col">Date</th>
+	      <th scope="col">Response Rate</th>
+	      <th scope="col">Status</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 14th March 2018</td>
+	      <td>42%</td>
+	      <td><span class="badge badge-success">Open</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 7th March 2018</td>
+	      <td>52%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse + eNPS</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 28th Feb 2018</td>
+	      <td>54%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 21st Feb 2018</td>
+	      <td>22%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 14th Feb 2018</td>
+	      <td>82%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 7th Feb 2018</td>
+	      <td>82%</td>
+	     <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse + eNPS</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 31st Jan 2018</td>
+	      <td>62%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 24th Jan 2018</td>
+	      <td>22%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 17th Jan 2018</td>
+	      <td>12%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 10th Jan 2018</td>
+	      <td>2%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse + eNPS</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 3rd Jan 2018</td>
+	      <td>72%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Employee Engagement Pulse</th>
+	      <td>Product, Marketing, Sales, Executives</td>
+	      <td>Thurs 21st Dec 2017</td>
+	      <td>62%</td>
+	      <td><span class="badge badge-danger">Closed</span></td>
+	    </tr>
+	  </tbody>
+	</table>

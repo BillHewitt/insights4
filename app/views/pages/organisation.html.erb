@@ -1,0 +1,276 @@
+<%-# Header starts -%>
+<div class="row">
+	<div class="col-12">
+		<div class="gap">
+			<nav aria-label="breadcrumb" role="navigation">
+			  <ol class="breadcrumb">
+			  	<%= link_to root_path do %>
+							<button type="button" class="btn btn-light "><i class="fa fa-chevron-left"></i> Surveys</button>
+				<% end %> 
+			  	<li class="breadcrumb-item"><%= link_to "Engagement", pages_engagement_path %></li>
+			    <li class="breadcrumb-item active" aria-current="page">The Organisation & Culture</li>
+			  </ol>
+			</nav>
+		</div>
+	</div>
+</div>
+<%-# Header ends -%>
+
+<%-# Separator -%>
+
+<div class="row">
+	<div class="col-12">
+		<hr>
+	</div>
+</div>
+
+<%-# Gauge Starts -%>
+
+<div class="row">
+	<div class="col-4">
+		
+		<div id="gauge" style="width:330px; height:260px"></div>
+	</div>
+	<div class="col-8">
+		<div class="space">
+			<h2 class="space">4.8 is an outstanding key driver score <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="This score is calculated based on an average of all the survey responses for The Organisation & Culture key driver questions"></em></h2>
+			<p class="space text-muted">Creating a great organisation with cultural diversity helps foster an environment where people want to work - boosting creativity, innovation, productivity, problem-solving, team morale and global-awareness. It’s been shown to be the number one motivator for a happy workforce.
+</p>
+<br>
+
+			<b>This score is based on 200 question responses </b>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+   <div class="card-body">
+   		<div class="row">
+			<div class="col-6">
+   			<h3>Questions <span class="badge badge-secondary small">200 question responses </span></h3>
+   			<br>
+   			</div>
+   			<div class="col-6">
+   			</div>
+   			<br>
+   		</div>
+
+   		<table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th scope="col">Questions</th>
+		      <th scope="col">Responses</th>
+		      <th scope="col">Average Score</th>
+		      <th scope="col">Question Breakdown</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>I can see myself working at Perkbox one year from now</td>
+		      <td>15</td>
+		      <td>4.7</td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td>At Perkbox, people are treated respectfully, regardless of their differences</td>
+		      <td>16</td>
+		      <td>4.8</td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td>Perkbox work to attract, develop, and retain people with diverse backgrounds</td>
+		      <td>14</td>
+		      <td>4.6</td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td>Perkbox have a good reputation as an employer</td>
+		      <td>15</td>
+		      <td>5</td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td>Perkbox are making a positive impact on society as a whole</td>
+		      <td>17</td>
+		      <td>4.9</td>
+		      <td></td>
+		    </tr>
+		  </tbody>
+		</table>
+   </div>
+</div>
+
+<div class="card">
+   <div class="card-body">
+   		<div class="row">
+			<div class="col-6">
+   			<h3>Comments <span class="badge badge-secondary small">14 question responses </span></h3>
+   			<br>
+   			</div>
+   			<div class="col-6">
+   			</div>
+   		</div>
+   		<table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th scope="col">Comment</th>
+		      <th scope="col">Date</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>Pushing our values in living out the culture in all interactions between each other, not just the client is essential as we grow.. this needs to continually recognised.</th>
+		      <td>01/06/2018</td>
+		    </tr>
+		    <tr>
+		      <td>Pushing our values in living out the culture in all interactions between each other, not just the client is essential as we grow.. this needs to continually recognised.</th>
+		      <td>01/06/2018</td>
+		    </tr>
+		    <tr>
+		      <td>Pushing our values in living out the culture in all interactions between each other, not just the client is essential as we grow.. this needs to continually recognised.</th>
+		      <td>01/06/2018</td>
+		    </tr>
+		  </tbody>
+		</table>
+   </div>
+</div>
+
+  
+
+
+<script type="text/javascript">
+
+$(function() {
+   $('#easypiechart-4').easyPieChart({
+       scaleColor: false,
+       barColor: '#00adee'
+   });
+});
+</script>
+
+<script type="text/javascript">
+  var g = new JustGage({
+    id: "gauge",
+    value: 4.8,
+    min: 0,
+    max: 5,
+    decimals : 1,
+    gaugeWidthScale: 0.6,
+    customSectors: [{
+          	color: '#00ADEE',
+            lo: 0,
+            hi: 33
+          },
+          {
+          	color: '#00ADEE',
+            lo: 33,
+            hi: 66
+          },{
+          	color: '#00ADEE',
+            lo: 66,
+            hi: 100
+          }]
+  });
+</script>
+
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
+    datasets: [{ 
+        data: [6.2,7.4,6.8,7.4,6.8,8.0,8.2,7.9,8.0,7.1,7.0],
+        label: "Engagement",
+        borderColor: "#00adee",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+    		display: false,
+            position: 'bottom',
+            labels: {
+                fontFamily: 'Lato',
+                fontSize: 14,
+            }
+        },
+    scales : {
+        xAxes : [ {
+            gridLines : {
+                display : true,
+            }
+        } ],
+        yAxes : [ {
+            gridLines : {
+                display : true,
+            }
+        } ]
+    }
+
+  },
+
+
+});
+</script>
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Question Responses</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered table-responsive">
+				  <thead>
+				    <tr>
+				      <th scope="col">Question</th>
+				      <th scope="col">Responses</th>
+				      <th scope="col">Response rate %</th>
+				      <th scope="col">Score/10</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>Perkbox encourages new ideas and innovation</td>
+				      <td>145</td>
+				      <td>67</td>
+				      <td class="text-success">7</td>
+				    </tr>
+				    <tr>
+				      <td>I have a sense of security in my job</td>
+				      <td>97</td>
+				      <td>56</td>
+				      <td class="text-success">8</td>
+				    </tr>
+				    <tr>
+				      <td>I feel that employees are always treated with respect</td>
+				      <td>50</td>
+				      <td>20</td>
+				      <td class="text-success">9</td>
+				    </tr>
+				    <tr>
+				      <td>I can envisage myself working at Perkbox one year from now</td>
+				      <td>145</td>
+				      <td>67</td>
+				      <td class="text-danger">5</td>
+				    </tr>
+				    <tr>
+				      <td>I feel like the changes that are made at Perkbox help us go in the right direction</td>
+				      <td>195</td>
+				      <td>87</td>
+				      <td class="text-danger">4</td>
+				    </tr>
+				  </tbody>
+				</table>
+      </div>
+    </div>
+  </div>
+</div>	
+

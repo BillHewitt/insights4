@@ -1,0 +1,558 @@
+<%-# Header starts -%>
+<div class="row gap">
+	<div class="col-6">
+		<nav aria-label="breadcrumb" role="navigation">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item"><%= link_to "Surveys", pages_questionshome_path %></li>
+							    <li class="breadcrumb-item active" aria-current="page">Settings</li>
+		  </ol>
+		</nav>
+	</div>
+	<div class="col-6">
+		<div class="float-right">
+			
+		</div>
+	</div>
+</div>
+<%-# Header ends -%>
+
+<%-# Separator -%>
+
+
+
+
+<div class="card">
+  <div class="card-body">
+  	<div class="row gap">
+	        		<div class="col-8">
+	        			<div class="float-left">
+	        				
+							  <a class="" href="#"><em class="fa fa-chevron-left"></em> <b><%= link_to "Employee Engagement", pages_questionshome_path %></b></a>
+
+	        			</div>
+	        		</div>
+	        		<div class="col-4">
+						<div class="float-right">
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">
+  Send test survey
+</button>
+													</div>
+					</div>
+				</div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+	  <li class="nav-item large">
+	    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Survey setup</a>
+	  </li>
+	  <li class="nav-item large">
+	    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Emails & notifications</a>
+	  </li>
+	  
+	</ul>
+
+
+	<div class="tab-content" id="myTabContent">
+<%-# Tab 1 begins -%>
+	  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+	  	<br>
+	  	<div id="accordion">
+		  <div class="card">
+		    <div class="card-header" id="headingOne">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          Schedule
+		        </button>
+		      </h5>
+		    </div>
+
+		    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+		      <div class="card-body">
+		        <div class="row">
+		        	<br>
+			        <div class="col-7">
+			        	<label for="exampleFormControlInput1"><b>How often would you like to send the pulse surveys?</b></label>
+			        	<form class="form-inline">
+						    <div class="form-check">
+						        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
+						        <label class="form-check-label" for="radio120">Every week <span class="badge badge-light">Recommended</span> </label>
+						    </div>
+
+						    <div class="form-check">
+						        <input class="form-check-input" name="group20" type="radio" id="radio121">
+						        <label class="form-check-label" for="radio121">Every two weeks </label>
+						    </div>
+
+						    <div class="form-check">
+						        <input class="form-check-input" name="group20" type="radio" id="radio122">
+						        <label class="form-check-label" for="radio122">Every four weeks </label>
+						    </div>
+						</form>
+						<p class="text-muted small 2">We'll send 5 quick questions {{every week}}, great for an up-to-date view of the health of your organisation</p>
+			        </div>
+			    </div>
+			    <div class="row">
+			        <div class="col-7 bill">
+			        	<form>
+						  <div class="form-group">
+						    <label for="exampleFormControlInput1"><b>Which team(s) would you like to send the pulse surveys to?</b></label>
+						    <input type="text" class="form-control" id="" placeholder="">
+						  </div>
+						</form>
+			        </div>
+			    </div>
+			    <div class="row">
+			        <div class="col-7 bill">
+			        	<label for="exampleFormControlInput1"><b>Survey start date</b></label>
+			        	<form>
+						  <div class="form-group">
+						    <input type="text" class="form-control" id="" placeholder="This should trigger a date picker">
+						  </div>
+						</form>
+						<p class="text-muted small">We'll always send your surveys at 2.00pm as we typically find there's a higher response rate in the afternoon</p>
+			        </div>
+			    </div>
+			    <div class="row">
+			        <div class="col-7">
+			        	<button type="button" class="btn btn-warning">Save</button>
+			        </div>
+			    </div>
+
+
+
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingTwo">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          eNPS
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+		      <div class="card-body">
+		        <div class="row">
+			        <div class="col-7">
+				        <form class="form-inline">
+				        	<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+							  <label class="form-check-label" for="defaultCheck1">
+							    <b>Measure eNPS?</b>
+							  </label>
+							</div>
+						</form>
+						<p class="text-muted small 2">eNPS is often regarded as the industry standard way of meausring employee engagement levels, based on answers to the following statement: "I would refer a friend to work at {{Perkbox}} if there was an approapriate job available"</p>
+			        </div>
+			    </div>
+			    <br>
+			    <div class="row">
+			    	<br>
+			        <div class="col-7">
+			        	<label for="exampleFormControlInput1"><b>How often would you like to measure eNPS?</b></label>
+			        	<form class="form-inline">
+						    <div class="form-check">
+						        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
+						        <label class="form-check-label" for="radio120">Every 4 weeks </label>
+						    </div>
+
+						    <div class="form-check">
+						        <input class="form-check-input" name="group20" type="radio" id="radio121">
+						        <label class="form-check-label" for="radio121">Every 12 weeks <span class="badge badge-light">Recommended</span></label>
+						    </div>
+						</form>
+						<p class="text-muted small 2">We'll include the eNPS question in the first survey  and then {{every 4 weeks}} after that so you can track your eNPS score over time</p>
+			        </div>
+			    </div>
+			    <div class="row">
+			        <div class="col-7">
+			        	<button type="button" class="btn btn-warning">Save</button>
+			        </div>
+			    </div>
+
+
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingThree">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		          Customisation & action board
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+		      <div class="card-body">
+		        
+		      		<div class="row">
+				        <div class="col-7">
+				        
+				        	<form>
+							  <div class="form-group">
+							    <label for="exampleFormControlInput1"><b>Your company name</b></label>
+							    <input type="text" class="form-control" id="" placeholder="Default to what we think their company name is">
+							  </div>
+							</form>
+							<p class="text-muted small">In some of the questions, we'll include your company name. Just double check we've formatted it correctly above. e.g I am familiar with and understand the mission of {{Tenant}}</p>
+				        </div>
+				    </div>
+				    
+					<div class="row">
+				        <div class="col-7 bill">
+					        <form class="form-inline">
+					        	<div class="form-check">
+								  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								  <label class="form-check-label" for="defaultCheck1">
+								    <b>Include link to the action board?</b>
+								  </label>
+								</div>
+							</form>
+							<p class="text-muted small">This will mean that the action board is available at the end of every survey, so you can demonstrate the impact of everyones feedback.</p>
+				        </div>
+				    </div>
+				    <div class="row">
+				        <div class="col-7">
+				        	<button type="button" class="btn btn-warning float-left">Save</button>
+				        </div>
+				    </div>
+
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	  	
+
+
+
+
+
+		</div>
+	  
+
+
+
+<%-# Tab 1 ends -%>
+<%-# Tab 2 begins -%>
+	  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+	  	<br>
+	  		<div id="accordion">
+			  <div class="card">
+			    <div class="card-header" id="headingFour">
+			      <h3 class="mb-0">
+			        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+			          Sent to your people
+			        </button>
+			      </h3>
+			    </div>
+
+			    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+			      <div class="card-body">
+			      	<div class="row">
+				        <div class="col-7">
+				        	<label for="exampleFormControlInput1"><b>Survey email</b></label>
+				        	<p class="text-muted small">This is the email that your people receive {{every week}} before answering their survey. Feel free to add your own unique message to it. Make sure you let everyone know why you want them to answer the survey.</p>
+				        	<form class="left">
+							  <div class="form-group">
+							    <label for="exampleFormControlInput1"><b>Subject Line</b></label>
+							    <input type="text" class="form-control" id="" value="It's time to give your feedback">
+							  </div>
+							
+							<div class="form-group">
+							    <label for="exampleFormControlTextarea1"><b>Body</b></label>
+							    <textarea class="form-control"  rows="3" placeholder="We know employee surveys typically get a bad rap, but we promise this one’s short and sweet. 
+
+The Perkbox Pulse Survey is your weekly chance to let us know about what’s working and what’s not… so we can make sure we’re creating work environment that everyone’s proud to be part of."></textarea>
+							  </div>
+							 </form>
+				        </div>
+				    </div>
+			        <div class="row">
+				        <div class="col-7">
+				        	<hr>
+				        	<label for="exampleFormControlInput1"><b>Reminder email</b></label>
+				        	<form class="form-inline">
+							    <div class="form-check">
+							        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
+							        <label class="form-check-label" for="radio120">Never </label>
+							    </div>
+
+							    <div class="form-check">
+							        <input class="form-check-input" name="group20" type="radio" id="radio121">
+							        <label class="form-check-label" for="radio121">After 3 days </label>
+							    </div>
+							</form>
+							<p class="text-muted small 2">If someone hasn't completed their survey yet, we'll send them a friendly reminder. This will help improve your response rate.</p>
+							<div class="collapse" id="viewdetails">
+							<hr>
+				        	<form>
+							  <div class="form-group">
+							    <label for="exampleFormControlInput1"><b>Subject Line</b></label>
+							    <input type="text" class="form-control" id="" value="Just a quick reminder">
+							  </div>
+							</form>
+							<div class="form-group">
+							    <label for="exampleFormControlTextarea1"><b>Body</b></label>
+							    <textarea class="form-control"  rows="3" placeholder="Hey, we'd love your feedback... Have your say and help us create a work environment we're all proud to be part of!"></textarea>
+							  </div>
+							<p class="text-muted small">This will be the reminder email that your people receive to prompt them to answer the surey if they happened to have missed it in their inbox.</p>
+
+						</div>
+			          
+			          	<a href="#" data-toggle="collapse" data-target="#viewdetails">View reminder email <em class="fa fa-chevron-down"></em></a>
+			          	<div class="row yip">
+					        <div class="col-7">
+					        	<button type="button" class="btn btn-warning">Save</button>
+					        </div>
+					    </div>
+				        </div>
+				    </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingFive">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+			          Sent to your admin
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+			      <div class="card-body">
+			        <div class="row">
+				        <div class="col-7">
+				        	<label for="exampleFormControlInput1"><b>24 hour warning email</b></label>
+				        	<form class="form-inline">
+							    <div class="form-check">
+							        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
+							        <label class="form-check-label" for="radio120">No thanks </label>
+							    </div>
+
+							    <div class="form-check">
+							        <input class="form-check-input" name="group20" type="radio" id="radio121">
+							        <label class="form-check-label" for="radio121">Yes please </label>
+							    </div>
+							</form>
+							<p class="text-muted small 2">We'll send you a reminder email 24 hours before a pulse survey is about to run, in case you want to change any settings.</p>
+				        </div>
+				    </div>
+
+				     <div class="row">
+				        <div class="col-7 bill">
+				        	<label for="exampleFormControlInput1"><b>Confirmation email</b></label>
+				        	<form class="form-inline">
+							    <div class="form-check">
+							        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
+							        <label class="form-check-label" for="radio120">No thanks</label>
+							    </div>
+
+							    <div class="form-check">
+							        <input class="form-check-input" name="group20" type="radio" id="radio121">
+							        <label class="form-check-label" for="radio121">Yes please </label>
+							    </div>
+							</form>
+							<p class="text-muted small 2">We'll send you a confirmation email to let you know that the surveys have been successfully sent.</p>
+				        </div>
+				    </div>
+
+				    <div class="row">
+				        <div class="col-7 bill">
+				        	<form>
+							  <div class="form-group">
+							    <label for="exampleFormControlInput1"><b>Which email address(es) would you like to receive the admin notifications to?</b></label>
+							    <input type="text" class="form-control" id="" placeholder="">
+							  </div>
+							</form>
+				        </div>
+				    </div>
+
+				    <div class="row">
+				        <div class="col-7">
+				        	<button type="button" class="btn btn-warning float-left">Save</button>
+				        </div>
+				    </div>
+			      </div>
+			    </div>
+			   </div>
+			    <div class="card">
+			    <div class="card-header" id="headingSix">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+			          Email settings
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+			      <div class="card-body">
+			        <div class="row">
+				        <div class="col-7">
+				        	<form>
+							  <div class="form-group">
+							    <label for="exampleFormControlInput1"><b>Choose your <span class="badge badge-light">sender</span> email address</b></label>
+							    <input type="text" class="form-control" id="" value="Defaulttostandardemail@insights.com">
+							  </div>
+							</form>
+							<p class="text-muted small">When pulse surveys are sent out, this will be the email address your staff receive them from. We find using one of your company leaders' name helps achieve a higher response rate.</p>
+				        </div>
+				    </div>
+				    <div class="row">
+				        <div class="col-7 bill">
+				        	<form>
+							  <div class="form-group">
+							    <label for="exampleFormControlInput1"><b>Choose your <span class="badge badge-light">sender</span> name</b></label>
+							    <input type="text" class="form-control" id="" value="Shaun Bradley">
+							  </div>
+							</form>
+							<p class="text-muted small">When pulse surveys are sent out, this will be the name your staff receive them from. We find using one of your company leaders' name helps achieve a higher response rate.</p>
+				        </div>
+				    </div>
+				    <div class="row">
+				        <div class="col-7">
+				        	<button type="button" class="btn btn-warning float-left">Save</button>
+				        </div>
+				    </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+<%-# Tab 2 begins -%>
+
+	  	
+<%-# Tab 2 ends -%>
+<%-# Tab 3 begins -%>
+	  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+	  	<div class="row">
+	        <div class="col-7">
+	        	<br>
+	        	<h3>Survey Sender</h3>
+	        	<br>
+	        	<form>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1"><b>Choose your <span class="badge badge-light">sender</span> email address</b></label>
+				    <input type="text" class="form-control" id="" value="Defaulttostandardemail@insights.com">
+				  </div>
+				</form>
+				<p class="text-muted small">When pulse surveys are sent out, this will be the email address your staff receive them from. We find using one of your company leaders' name helps achieve a higher response rate.</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="col-7 bill">
+	        	<form>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1"><b>Choose your <span class="badge badge-light">sender</span> name</b></label>
+				    <input type="text" class="form-control" id="" value="Shaun Bradley">
+				  </div>
+				</form>
+				<p class="text-muted small">When pulse surveys are sent out, this will be the name your staff receive them from. We find using one of your company leaders' name helps achieve a higher response rate.</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="col-7">
+	    		<hr>
+	    	</div>
+		</div>
+		<div class="row">
+	        <div class="col-7">
+	        	<h3>Survey Email Copy</h3>
+	        	<br>
+	        	<form>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1"><b>Subject Line</b></label>
+				    <input type="text" class="form-control" id="" value="It's time to give your feedback">
+				  </div>
+				</form>
+				<div class="form-group">
+				    <label for="exampleFormControlTextarea1"><b>Body</b></label>
+				    <textarea class="form-control"  rows="3" value="Hey, we'd love your feedback... Have your say and help us create a work environment
+we're all proud to be part of!"></textarea>
+				  </div>
+				<p class="text-muted small">This will be the email that your people receive {{every week}} before answering their survey. Feel free to add your own unique message to it. Make sure you let them know why you want them to answer the survey.</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="col-7">
+	    		<hr>
+	    	</div>
+		</div>
+	    <div class="row">
+	        <div class="col-7">
+	        	<h3>Reminder Email Copy</h3>
+	        	<br>
+	        	<form>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1"><b>Subject Line</b></label>
+				    <input type="text" class="form-control" id="" value="Just a quick reminder">
+				  </div>
+				</form>
+				<div class="form-group">
+				    <label for="exampleFormControlTextarea1"><b>Body</b></label>
+				    <textarea class="form-control"  rows="3" value="Hey, we'd love your feedback... Have your say and help us create a work environment
+we're all proud to be part of!"></textarea>
+				  </div>
+				<p class="text-muted small">This will be the reminder email that your people receive to prompt them to answer the surey if they happened to have missed it in their inbox.</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="col-7">
+	        	<button type="button" class="btn btn-warning float-right">Save</button>
+	        </div>
+	    </div>
+	  </div>
+<%-# Tab 3 ends -%>
+	</div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send test survey</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="form-group">
+		    <label for="exampleFormControlSelect1">Enter email address</label>
+		    
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="youremail@insights.com">
+
+		 </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Send test email</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send test survey</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="form-group">
+		    <label for="exampleFormControlSelect1">Enter email address</label>
+		    
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="youremail@insights.com">
+
+		 </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Send test email</button>
+      </div>
+    </div>
+  </div>
+</div>	

@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+       <% if current_page?(pages_engagement_path) or current_page?(pages_opportunities_path) -%>
+         
+          <li class="nav-item active">
+            <%= link_to "ANALYSIS", pages_engagement_path, :class => 'nav-link' %>
+          </li>
+       <% else -%>
+          <li class="nav-item">
+            <%= link_to "ANALYSIS", pages_engagement_path, :class => 'nav-link' %>
+          </li>
+       <% end -%>
+
+       <% if current_page?(pages_action_path) -%>
+         
+          <li class="nav-item active">
+            <%= link_to "ACTIONS", pages_action_path, :class => 'nav-link' %>
+          </li>
+       <% else -%>
+          <li class="nav-item">
+            <%= link_to "ACTIONS", pages_action_path, :class => 'nav-link' %>
+          </li>
+       <% end -%>
+      
+      <% if current_page?(pages_questionshome_path) or current_page?(pages_questions_path) or current_page?(pages_questionshomesettings_path) or current_page?(pages_questionstimeline_path) -%> 
+      
+          <li class="nav-item active">
+            <%= link_to "SURVEYS", pages_questionshome_path, :class => 'nav-link' %>
+          </li>
+
+        <% else -%>
+      
+        <li class="nav-item">
+          <%= link_to "SURVEYS", pages_questionshome_path, :class => 'nav-link' %>
+        </li>
+
+      <% end -%>
+      
+    </ul>
+  </div>
+</nav>
+
+

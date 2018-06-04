@@ -1,0 +1,274 @@
+<%-# Header starts -%>
+<div class="row">
+	<div class="col-12">
+		<div class="gap">
+			<nav aria-label="breadcrumb" role="navigation">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item" aria-current="page">
+			    	<%= link_to root_path do %>
+							<button type="button" class="btn btn-light "><i class="fa fa-chevron-left"></i> Surveys</button>
+						<% end %> Employee Engagement</li>
+			  </ol>
+			</nav>
+		</div>
+	</div>
+</div>
+<%-# Header ends -%>
+
+<%-# Separator -%>
+
+<div class="row">
+	<div class="col-12">
+		<hr>
+	</div>
+</div>
+
+<%-# Gauge Starts -%>
+
+<div class="row">
+	<div class="col-4">
+		
+		<div id="gauge" style="width:330px; height:260px"></div>
+	</div>
+	<div class="col-8">
+		<div class="space">
+			<h2 class="space">4.5 is an outstanding employee engagement score <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="This score is calculated as an average across all 10 key drivers of engagement. e.g Communication, My work, Leadership, Teamwork etc"></em></h2>
+			<p class="space text-muted">This puts you in the top 25% most engaged companies in the UK
+
+Congratulations - and keep up the great work! Truly engaged workforces are rare, but you have bucked the trend with an excellent performance across all the key engagement drivers. 
+</p>
+<br>
+			<b>This score is based on 139 survey responses</b>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<%-# Strengths/Weaknesses -%>
+<div class="row">
+	<div class="col-6">
+		<div class="card">
+   			<div class="card-body">
+   				<h2 class="text-center">Your Strengths</h2>
+				<p class="text-center text-muted small">UPPER 5 KEY DRIVERS</p>
+				<%= link_to pages_organisation_path do %>
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">The Organisation &amp; Culture <span class="float-right text-success">4.8 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 95%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				<% end -%>
+				<a href="/pages/organisation">
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">Communication <span class="float-right text-success">4.6 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 92%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				</a>
+				<a href="/pages/organisation">
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">My Work <span class="float-right text-success">4.5 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 87%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				</a>
+				<a href="/pages/organisation">
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">Leadership <span class="float-right text-success">4.1 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 81%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				</a>
+				<a href="/pages/organisation">
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">Management <span class="float-right text-success">3.9 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 76%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				</a>
+   			</div>
+   		</div>
+   	</div>
+   	<div class="col-6">
+		<div class="card">
+   			<div class="card-body">
+   				<h2 class="text-center">Your Weaknesses</h2>
+				<p class="text-center text-muted small">LOWER 5 KEY DRIVERS</p>
+				<a href="/pages/organisation">
+				<%= link_to pages_opportunities_path do %>
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">Opportunities <span class="float-right text-danger">3.5 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 74%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				<% end -%>
+				<%= link_to pages_reward_path do %>
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">Reward & Recognition <span class="float-right text-danger">3.2 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 71%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				<% end -%>
+				<a href="/pages/organisation">
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">Training & Development <span class="float-right text-danger">3.0 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 63%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				</a>
+				<a href="/pages/organisation">
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">Teamwork <span class="float-right text-danger">2.8 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 61%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				</a>
+				<a href="/pages/organisation">
+				  	<div class="bottomLinks">
+				    	<p class="pt-1">Quality Of Life <span class="float-right text-danger">2.7 <i class="fa fa-chevron-right"></i></span></p>
+						<div class="progress progress-custom">
+							<div class="progress-bar bg-text-color" style="width: 57%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+				  	</div>
+				</a>
+   			</div>
+   		</div>
+   	</div>
+</div>
+
+<%-# Strengths/Weaknesses end -%>
+
+
+<div class="card">
+   <div class="card-body">
+   		<div class="row">
+			<div class="col-6">
+   			<h3>All Questions <span class="badge badge-secondary small">830 question responses </span></h3>
+   			</div>
+   			<div class="col-6">
+   			<i class="fa fa-chevron-down pull-right"></i>
+   			</div>
+   		</div>
+   </div>
+</div>
+
+<div class="card">
+   <div class="card-body">
+   		<div class="row">
+			<div class="col-6">
+   			<h3>All Comments <span class="badge badge-secondary small">57 comments </span></h3>
+   			</div>
+   			<div class="col-6">
+   			<i class="fa fa-chevron-down pull-right"></i>
+   			</div>
+   		</div>
+   </div>
+</div>
+
+
+<script type="text/javascript">
+
+$(function() {
+   $('#easypiechart-4').easyPieChart({
+       scaleColor: false,
+       barColor: '#00adee'
+   });
+});
+</script>
+
+<script type="text/javascript">
+  var g = new JustGage({
+    id: "gauge",
+    value: 4.5,
+    min: 0,
+    max: 5,
+    decimals : 1,
+    gaugeWidthScale: 0.6,
+    customSectors: [{
+          	color: '#00ADEE',
+            lo: 0,
+            hi: 33
+          },
+          {
+          	color: '#00ADEE',
+            lo: 33,
+            hi: 66
+          },{
+          	color: '#00ADEE',
+            lo: 66,
+            hi: 100
+          }]
+  });
+</script>
+
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
+    datasets: [{ 
+        data: [6.2,7.4,6.8,7.4,6.8,8.0,8.2,7.9,8.0,7.1,7.0],
+        label: "Engagement",
+        borderColor: "#00adee",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+    		display: false,
+            position: 'bottom',
+            labels: {
+                fontFamily: 'Lato',
+                fontSize: 14,
+            }
+        },
+    scales : {
+        xAxes : [ {
+            gridLines : {
+                display : true,
+            }
+        } ],
+        yAxes : [ {
+            gridLines : {
+                display : true,
+            }
+        } ]
+    }
+
+  },
+
+
+});
+</script>
+
+<div class="modal fade bd-example-modal-lg" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">How we measure engagement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>It's pretty intuitive to make the leap that engaged employees have a big impact on business success... but what actually makes an engaged employee? What are the drivers and differentiators between engaged and disengaged employees?</p>
+
+				<p>In order to measure engagement, we first need to understand the factors that DRIVE or INFLUENCE employee engagement. There are a plethora of questions, models (i.e. Gallup’s Q12), and approaches to determine this, but we prefer to lean on studies from credible sources that identify the key drivers of engagement. We’ve collected a few of these studies, and outlined the factors they found below:</p>
+      </div>
+    </div>
+  </div>
+</div>	
+<br>
+
+
