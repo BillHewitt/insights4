@@ -14,8 +14,18 @@ div.container {
 	max-width: 1170px;
 }
 
+.btn.btn-light.btn-block.dropdown-toggle {
+  border: 1px solid rgb(151, 151, 151);
+background-color: #fff;
+height: 40px;
+}
+
 .row.hello {
   padding-top: 15px;
+}
+
+div.pad {
+  padding-bottom: 10px;
 }
 
 .text-center.bill {
