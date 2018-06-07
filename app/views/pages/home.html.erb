@@ -10,8 +10,8 @@
 	<div class="col-6">
 		<div class="float-right">
 			<%= link_to  do %>
-							<button type="button" class="btn btn-warning button-large">Create new survey</button>
-						<% end %>
+				<button type="button" class="btn btn-warning button-large">Create new survey</button>
+			<% end %>
 		</div>
 	</div>
 </div>
@@ -19,56 +19,25 @@
 
 <%-# Separator -%>
 
-    <div class="card">
-
-
-
-      <div class="row">
-      	<div class="col-md-3">
-          <div class="card-img-bottom">
-
-        </div>
-        </div>
-        <div class="col-md-9">
-        	<div class="card-body">
-	        	<div class="row">
-	        		<div class="col-6">
-	        			<div class="float-left">
-	        				
-							  <h2>Employee Engagement
-							  </h2>
-
-	        			</div>
-	        		</div>
-	        		<div class="col-6">
-						<div class="float-right">
-							
-						</div>
-					</div>
-				</div>
-
-
-				<div class="row">
-	        		<div class="col-8">
-
-	        			<p class="gap">Your next pulse survey is scheduled to be sent out on <b>Thurs 21st March at 2.00pm</b> </p>
-
-	        			<%= link_to do %>
-							<button type="button" class="btn btn-light ">Schedule & Settings</button>
-						<% end %>
-						<%= link_to pages_engagement_path do %>
-							<button type="button" class="btn btn-warning ">View results</button>
-						<% end %>
-
-					
-
-	        			<br>
-	        			<br>
-
-	        			
-	        		</div>
-				</div>
+<div class="card">
+	<div class="card-body">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="https://i.imgur.com/EnVjqLg.png" class="rounded mx-auto d-block">
 			</div>
+			<div class="col-md-9">
+				<h2>Employee Engagement</h2>
+				<p class="text-muted">Your next pulse survey is scheduled to be sent out on Thurs 21st March at 2.00pm</p>
+				<%= link_to do %>
+					<button type="button" class="btn btn-light ">Schedule & Settings</button>
+				<% end %>
+				<%= link_to pages_engagement_path do %>
+					<button type="button" class="btn btn-warning ">View results</button>
+				<% end %>
+			</div>
+		</div>
+	</div>
 </div>
-</div>
+
+   
 

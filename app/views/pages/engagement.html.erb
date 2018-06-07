@@ -5,82 +5,73 @@
 			<nav aria-label="breadcrumb" role="navigation">
 			  <ol class="breadcrumb">
 			  	<li class="breadcrumb-item"><%= link_to "Surveys", root_path %></li>
-			    <li class="breadcrumb-item" aria-current="page"> Employee Engagement</li>
+			    <li class="breadcrumb-item" aria-current="page">Employee Engagement</li>
 			  </ol>
 			</nav>
 		</div>
 	</div>
 </div>
 <%-# Header ends -%>
- 
+
  <div class="row hello">
-                              <div class="col-3">
-                                <div class="dropdown">
-								  <button class="btn btn-light btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								    All teams
-								  </button>
-								  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								    <a class="dropdown-item" href="#">Team</a>
-								    <a class="dropdown-item" href="#">Team</a>
-								    <a class="dropdown-item" href="#">Team</a>
-								  </div>
-								</div>
-                              </div>
-                              <div class="col-3">
-                                <div class="dropdown">
-								  <button class="btn btn-light btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								    All time
-								  </button>
-								  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								    <a class="dropdown-item" href="#">Time period</a>
-								    <a class="dropdown-item" href="#">Time period</a>
-								    <a class="dropdown-item" href="#">Time period</a>
-								  </div>
-								</div>
-                              </div>
-                              <div class="col-6">
-                                <button type="button" class="btn btn-light float-right">Download PDF Report</button>
-                              </div>
-                            </div>
-
-<%-# Separator -%>
-
-<div class="row">
-	<div class="col-12">
-		<hr>
+  <div class="col-3">
+    <div class="dropdown">
+	  <button class="btn btn-light btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    All teams
+	  </button>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	    <a class="dropdown-item" href="#">Team</a>
+	    <a class="dropdown-item" href="#">Team</a>
+	    <a class="dropdown-item" href="#">Team</a>
+	  </div>
 	</div>
+  </div>
+  <div class="col-3">
+    <div class="dropdown">
+	  <button class="btn btn-light btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    All time
+	  </button>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	    <a class="dropdown-item" href="#">Time period</a>
+	    <a class="dropdown-item" href="#">Time period</a>
+	    <a class="dropdown-item" href="#">Time period</a>
+	  </div>
+	</div>
+  </div>
+  <div class="col-6">
+    <button type="button" class="btn btn-warning float-right">Download PDF Report</button>
+  </div>
 </div>
 
-<%-# Gauge Starts -%>
-
-<div class="pad">
-</div>
-
-<div class="row">
-
-	<div class="col-4">
-		
-		<div id="gauge" style="width:330px; height:260px"></div>
-	</div>
-	<div class="col-8">
-		<div class="space">
-			<h3 class="space">4.5 is an outstanding Employee Engagement score <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="This score is calculated as an average across all 10 key drivers of engagement. e.g Communication, My work, Leadership, Teamwork etc"></em></h3>
-			<p class="space text-muted">Employee engagement is a measure of an employee's proactive support of your company. An engaged employee is not just happy at work, they are emotionally-invested in contributing to the success of your business and committed to meeting its goals. They are proud to work for your company, feel valued and see a future with you. This shows in their dedication and willingness to go the extra mile.
-</p>
 <br>
-			<b>This score is based on 139 survey responses <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Based on your company size, you'll require at least 666 survey responses in this 10 week survey cycle in order for your results to be deemed as representative of your organisation. You're currently on week 4 of 10."></em></b>
-			
+
+<%-# Card ends -%>
+<%-# Guage Card begins -%>
+
+<div class="card gauge">
+	<div class="card-body">
+		<div class="row">
+			<div class="col-md-4">
+				<div id="gauge" style="width:330px; height:260px"></div>
+			</div>
+			<div class="col-md-8">
+				<h2>4.5 is an outstanding Employee Engagement score<em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="This score is calculated as an average across all 10 key drivers of engagement. e.g Communication, My work, Leadership, Teamwork etc"></em></h2>
+				<p class="text-muted">Employee engagement is a measure of an employee's proactive support of your company. An engaged employee is not just happy at work, they are emotionally-invested in contributing to the success of your business and committed to meeting its goals. They are proud to work for your company, feel valued and see a future with you. This shows in their dedication and willingness to go the extra mile.
+				</p>
+				<p class="strong">This score is based on 139 survey responses <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Based on your company size, you'll require at least 666 survey responses in this 10 week survey cycle in order for your results to be deemed as representative of your organisation. You're currently on week 4 of 10."></em></p>
+				
+			</div>
 		</div>
 	</div>
 </div>
-</div>
-</div>
+
+<%-# Card begins -%>
+
 <%-# Strengths/Weaknesses -%>
 <div class="row">
 	<div class="col-6">
 		<div class="card">
    			<div class="card-body">
-   				<br>
    				<h2 class="text-center bill">Highest Performing Drivers</h2>
 				<%= link_to pages_organisation_path do %>
 				  	<div class="bottomLinks">
@@ -129,7 +120,6 @@
    	<div class="col-6">
 		<div class="card">
    			<div class="card-body">
-   				<br>
    				<h2 class="text-center bill">Lowest Performing Drivers</h2>
 				<a href="/pages/organisation">
 				<%= link_to pages_opportunities_path do %>
@@ -180,6 +170,7 @@
 
 <%-# Strengths/Weaknesses end -%>
 
+<%-# All comments start -%>
 
 <div class="card">
    <div class="card-body">
@@ -205,6 +196,10 @@
    			</div>
    		</div>
    </div>
+</div>
+
+<%-# All comments end -%>
+</div>
 </div>
 
 
