@@ -24,15 +24,12 @@
     			<div class="row space">
   				<div class="col-md-12">
   					<% unless current_page?(root_path) %>
-                <div class="card">
-                <div class="card-body">
+
                     <%= yield %>
-                  </div>
-                </div>
+
             <% else %>
 
-            <div class="card">
-                <div class="card-body">
+
                     <%= yield %>
                     <% end %>
                   </div>

@@ -4,242 +4,42 @@
 		<div class="gap">
 			<nav aria-label="breadcrumb" role="navigation">
 			  <ol class="breadcrumb">
-			  	<li class="breadcrumb-item"><%= link_to "Users", pages_users_path %></li>
-			    <li class="breadcrumb-item active" aria-current="page">Participation Stats</li>
+			  	<li class="breadcrumb-item"><%= link_to "Surveys", root_path %></li>
+			    <li class="breadcrumb-item" aria-current="page">Schedule & Settings</li>
 			  </ol>
 			</nav>
-		</div>
-	</div>
-	<div class="col-12">
-		<div class="float-left">
-			<div class="dropdown">
-				<button class="btn btn-light dropdown-toggle small" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    Whole Company
-				</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#">Account Management</a>
-					<a class="dropdown-item" href="#">Product & Engineering</a>
-					<a class="dropdown-item" href="#">London</a>
-					<a class="dropdown-item" href="#">Sheffield</a>
-				</div>
-			</div>
-		</div>
-		<div class="float-right">
-			<button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal3">Email inactive users</button>
 		</div>
 	</div>
 </div>
 <%-# Header ends -%>
 
-<%-# Separator -%>
+<div class="settings">
+</div>
 
 <div class="row">
 	<div class="col-12">
-		<hr>
-	</div>
-</div>
-
-<%-# Stats -%>
-
-
-<div class="row">
-	<div class="col-4">
 		<div class="card">
-		  <div class="card-body">
-		    <h1 class="text-center">57.5%</h1>
-		    <p class= "text-muted text-center">RESPONSE RATE</p>
-		  </div>
-		</div>	
-	</div>
-	<div class="col-8">
-		<canvas id="line-chart" width="800" height="250"></canvas>
-	</div>
-</div>
-
-
-<div class="row less">
-	<div class="col-4">
-		<div class="card">
-		  <div class="card-body">
-		    <h1 class="text-center">160</h1>
-		    <p class="text-muted text-center">TOTAL USERS</p>
-		  </div>
-		</div>
-	</div>
-	<div class="col-4">
-		<div class="card">
-		  <div class="card-body">
-		    <h1 class="text-center">92</h1>
-		    <p class="text-success text-center">ACTIVE USERS</p>
-		  </div>
-		</div>
-	</div>
-	<div class="col-4">
-		<div class="card">
-		  <div class="card-body">
-		    <h1 class="text-center">68</h1>
-		    <p class="text-danger text-center">INACTIVE USERS <em class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="People that haven't answered a survey in the last 4 weeks"></em></p>
-		  </div>
+			<div class="card-body">
+				<div class="row engagement">
+					<div class="col-md-3">
+						<img src="https://i.imgur.com/EnVjqLg.png" class="rounded mx-auto d-block">
+					</div>
+					<div class="col-md-6">
+						<h2>Employee Engagement</h2>
+						<p class="text-muted">Your next pulse survey is scheduled to be sent out on Thurs 21st March at 2.00pm</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Email inactive users</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-		  <div class="form-group">
-		    <label for="exampleInputEmail1">Subject line</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter a subject line">
-		  </div>
-		</form>
-		<div class="form-group">
-		    <label for="exampleTextarea">Email body</label>
-		    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-		  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Send email</button>
-      </div>
-    </div>
-  </div>
-</div>		
-
-						<!-- Modal -->
-<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit user</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-		  <div class="form-group">
-		    <label for="exampleInputEmail1">First name</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="User's first name">
-		  </div>
-		  <div class="form-group">
-		    <label for="exampleInputEmail1">Last name</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="User's last name">
-		  </div>
-		  <div class="form-group">
-		    <label for="exampleInputEmail1">Email</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="User's email address">
-		  </div>
-		</form>
-		<div class="form-group">
-		    <label for="exampleSelect1">Access</label>
-		    <select class="form-control" id="exampleSelect1">
-		      <option>Employee</option>
-		      <option>Team Lead</option>
-		      <option>Admin</option>
-		    </select>
-		  </div>
-		<div class="form-group">
-		    <label for="exampleSelect1">Add to the following team</label>
-		    <select class="form-control" id="exampleSelect1">
-		      <option>Perkbox</option>
-		      <option>Account Management</option>
-		      <option>Product & Engineering</option>
-		      <option>London</option>
-		      <option>Sheffield</option>
-		    </select>
-		  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
-      </div>
-    </div>
-  </div>
-</div>	
-
-
-						<!-- Modal -->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to delete this user?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete user</button>
-      </div>
-    </div>
-  </div>
-</div>	
-
-						<!-- Modal -->
-<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to resend an email invite to this user?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Send email invitation</button>
-      </div>
-    </div>
-  </div>
-</div>	
-
-<script>
-new Chart(document.getElementById("line-chart"), {
-  type: 'line',
-  data: {
-    labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
-    datasets: [{ 
-        data: [72,74,78,74,78,80,82,79,80,81,57],
-        label: "Response rate",
-        borderColor: "#00adee",
-        fill: false
-      }
-    ]
-  },
-  options: {
-    legend: {
-    		display: false,
-            position: 'bottom',
-            labels: {
-                fontFamily: 'Lato',
-                fontSize: 14,
-            }
-        },
-    scales : {
-        xAxes : [ {
-            gridLines : {
-                display : true,
-            }
-        } ],
-        yAxes : [ {
-            gridLines : {
-                display : true,
-            }
-        } ]
-    }
-
-  },
-
-
-});
-</script>
+<div class="card">
+	<div class="card-body">
+		<nav class="nav nav-pills nav-justified">
+		  <a class="nav-link" href="#">Schedule</a>
+		  <a class="nav-link" href="#">Survey Settings</a>
+		  <a class="nav-link" href="#">Email Settings</a>
+		</nav>
+	</div>
+</div>
