@@ -28,12 +28,19 @@
 			<div class="col-md-6">
 				<h2>Employee Engagement</h2>
 				<p class="text-muted">Your next pulse survey is scheduled to be sent out on Thurs 21st March at 2.00pm</p>
-				<%= link_to pages_stats_path do %>
-					<button type="button" class="btn btn-light ">Schedule & Settings</button>
-				<% end %>
-				<%= link_to pages_engagement_path do %>
-					<button type="button" class="btn btn-warning ">View results</button>
-				<% end %>
+				<div class="row">
+					<div class="col-md-5">
+						<%= link_to pages_stats_path do %>
+							<button type="button" class="btn btn-light btn-block">Schedule & Settings</button>
+						<% end %>
+					</div>
+					<div class="col-md-5">
+						<%= link_to pages_engagement_path do %>
+							<button type="button" class="btn btn-warning btn-block">View results</button>
+						<% end %>
+					</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
